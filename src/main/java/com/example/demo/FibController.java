@@ -1,14 +1,17 @@
 package com.example.demo;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class FibController {
 
-    @RequestMapping("/fibsequence")
-    public String fibbingsequence() {
-        return "/fibbingsequence";
+
+    @GetMapping("/recursiveTests")
+    public String recursiveTests() {
+        return "recursiveTests";
     }
 
 }
