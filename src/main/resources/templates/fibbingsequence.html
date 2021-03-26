@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<p>Welcome to the fibonacci sequence, exponent calculator, and other recursive algorithms</p>
+<p>Please type in the number of fibonacci sequence iterations</p>
+<form id="fibInput" action="/fibbingsequence" method="GET" >
+    <label for="fibInput">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="fibinputter" name="fibinputter" required minlength="0" maxlength="100" size="10">
+    <button>Enter!</button>
+</form>
+<p>Your sequence iteration number [place Thymeleaf for Fibonacci number here] is [place value here] </p>
+<br><br><br>
+
+<p>Please type in the base of a number to be exponentiated</p>
+<form id="baseInput" action="/fibbingsequence" method="GET" >
+    <label for="baseInput">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="baseinputter" name="baseinputter" required minlength="0" maxlength="100" size="10">
+</form>
+<p>Please type in the exponent the base is raised to</p>
+<form id="exponentInput" action="/fibbingsequence" method="GET" >
+    <label for="exponentInput">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="exponentinputter" name="exponentinputter" required minlength="0" maxlength="100" size="10">
+    <button>Click me to raise your number to the inputted power!</button>
+</form>
+<p>your final number is [place result] and is represented by [base] ^ [power]</p>
+<br><br><br>
+
+
+<p>Please type in the first factor for a multiplication</p> <!--We need to add a control flow statement such that nothing happens when the input is null <-- Javascript probably-->
+<form id="firstFactor" action="/fibbingsequence" method="GET" >
+    <label for="firstFactor">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="firstinputter" name="firstinputter" required minlength="0" maxlength="100" size="10">
+</form>
+<p>Please type in the second factor for a multiplication</p>
+<form id="secondFactor" action="/fibbingsequence" method="GET" >
+    <label for="secondFactor">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="secondinputter" name="secondinputter" required minlength="0" maxlength="100" size="10">
+    <button>Click me to multiple both factors</button>
+</form>
+<p>Your final number is [both numbers multiplied together] and is expressed by [firstFactor] * [secondFactor]</p>
+<br><br><br>
+
+<p>Please type in a string to be tested as a palindrome</p> <!--We need to add a control flow statement such that nothing happens when the input is null <-- Javascript probably-->
+<form id="palInput" action="/fibbingsequence" method="GET" >
+    <label for="palInput">Copy-paste your URL:</label> <!-- input field is below -->
+    <input type="text" id="palinputter" name="palinputter" required minlength="0" maxlength="100" size="10">
+    <button>Click me to test if what you input is a palindrome!</button>
+</form>
+
+
+</body>
+</html>
