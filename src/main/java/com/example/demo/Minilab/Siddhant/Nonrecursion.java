@@ -1,11 +1,13 @@
-package com.example.demo.Minilab;
+package com.example.demo.Minilab.Siddhant;
 
-public class Siddhant {
+import java.io.IOException;
+
+public class Nonrecursion {
 
     int num1 = 0;
     int num2 = 0;
 
-    public Siddhant(){
+    public Nonrecursion(){
         this.num1 = num1;
         this.num2 = num2;
 
@@ -40,9 +42,16 @@ public class Siddhant {
         return gcf;
 
     }
+
+    public static int driver() throws IOException {
+        Nonrecursion cases = new Nonrecursion();
+        int y = cases.normal(3, 3);
+        return y;
+    }
     public static void main(String[] args){
-        Siddhant normal1 = new Siddhant();
+        Nonrecursion normal1 = new Nonrecursion();
         normal1.normal(3, 3);
     }
+
 
 }
