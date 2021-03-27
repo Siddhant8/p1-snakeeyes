@@ -1,4 +1,5 @@
 # p1-snakeeyes
+## Note: the code currently is not online. You must pull and run it on the local host to see anything. 
 ## Basic Project Plan
 We want to create a productivity website where people can create checklists, calendars, use customized calculators, and look at the stock market.
 
