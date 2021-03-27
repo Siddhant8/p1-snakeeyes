@@ -1,5 +1,5 @@
 # p1-snakeeyes
-## Note: the code currently is not online. You must pull and run it on the local host to see anything. You must also directly enter an html page with "/[name of html file]" because index.html was deleted.
+## Note: the code currently is not online. You must pull and run it on the local host to see anything. 
 ## Basic Project Plan
 We want to create a productivity website where people can create checklists, calendars, use customized calculators, and look at the stock market.
 
