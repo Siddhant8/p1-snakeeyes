@@ -12,10 +12,10 @@ import java.io.IOException;
 @Controller
 public class RecursionController {
     @GetMapping("/siddhantrecursion")
-    public String covid(@RequestParam(name="num1", required=false,  defaultValue="10") String days, Model model) throws IOException {
-        int nth = Integer.parseInt(days);
+    public String nonrecursion(@RequestParam(name="num1", required=false,  defaultValue="10") String num1, Model model) throws IOException {
+        int nth = Integer.parseInt(num1);
 
-        model.addAttribute("num1", Nonrecursion.driver());
+        model.addAttribute("num1", Nonrecursion.driver(nth));
         return "minilab/nonrecursion";
     }
 

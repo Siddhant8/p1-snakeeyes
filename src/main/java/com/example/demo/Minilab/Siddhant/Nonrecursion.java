@@ -5,21 +5,21 @@ import java.io.IOException;
 public class Nonrecursion {
 
     int num1 = 0;
-    int num2 = 0;
+    int num2 = 12;
 
-    public Nonrecursion(){
-        this.num1 = num1;
+    public Nonrecursion(int number1){
+        this.num1 = number1;
         this.num2 = num2;
 
     }
 
-    public int normal(int a, int b){
-        num1 = a;
-        num2 = b;
+    public int normal(){
+
+
         int gcf = 1;
-        if(a<b){
-            for(int i = 1; i <= a; i++){
-                if(a%i == 0 && b%i == 0){
+        if(num1<num2){
+            for(int i = 1; i <= num1; i++){
+                if(num1%i == 0 && num2%i == 0){
                     gcf = i;
                 }
                 else{
@@ -28,9 +28,9 @@ public class Nonrecursion {
             }
 
         }
-        else if(b <= a){
-            for(int i = 1; i <=b; i++){
-                if(a%i == 0 && b%i == 0){
+        else if(num2 <= num1){
+            for(int i = 1; i <=num2; i++){
+                if(num1%i == 0 && num2%i == 0){
                     gcf = i;
                 }
                 else{
@@ -43,14 +43,13 @@ public class Nonrecursion {
 
     }
 
-    public static int driver() throws IOException {
-        Nonrecursion cases = new Nonrecursion();
-        int y = cases.normal(3, 3);
+    public static int driver(int test) throws IOException {
+        Nonrecursion cases = new Nonrecursion(test);
+        int y = cases.normal();
         return y;
     }
-    public static void main(String[] args){
-        Nonrecursion normal1 = new Nonrecursion();
-        normal1.normal(3, 3);
+    public static void main(String[] args) throws IOException {
+        Nonrecursion.driver(4);
     }
 
 
