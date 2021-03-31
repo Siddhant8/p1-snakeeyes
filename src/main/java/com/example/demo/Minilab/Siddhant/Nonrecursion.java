@@ -7,19 +7,19 @@ public class Nonrecursion {
     int num1 = 0;
     int num2 = 12;
 
-    public Nonrecursion(int number1){
+    public Nonrecursion(int number1, int number2){
         this.num1 = number1;
-        this.num2 = num2;
+        this.num2 = number2;
 
     }
 
-    public int normal(){
+    public static int normal(int a, int b){
 
 
         int gcf = 1;
-        if(num1<num2){
-            for(int i = 1; i <= num1; i++){
-                if(num1%i == 0 && num2%i == 0){
+        if(a<b){
+            for(int i = 1; i <= a; i++){
+                if(a%i == 0 && b%i == 0){
                     gcf = i;
                 }
                 else{
@@ -28,9 +28,9 @@ public class Nonrecursion {
             }
 
         }
-        else if(num2 <= num1){
-            for(int i = 1; i <=num2; i++){
-                if(num1%i == 0 && num2%i == 0){
+        else if(b <= a){
+            for(int i = 1; i <=b; i++){
+                if(a%i == 0 && b%i == 0){
                     gcf = i;
                 }
                 else{
@@ -43,13 +43,10 @@ public class Nonrecursion {
 
     }
 
-    public static int driver(int test) throws IOException {
-        Nonrecursion cases = new Nonrecursion(test);
-        int y = cases.normal();
-        return y;
-    }
+
+
     public static void main(String[] args) throws IOException {
-        Nonrecursion.driver(4);
+        Nonrecursion.normal(4,4);
     }
 
 

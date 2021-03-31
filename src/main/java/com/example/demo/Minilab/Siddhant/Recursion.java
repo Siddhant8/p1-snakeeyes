@@ -2,17 +2,23 @@ package com.example.demo.Minilab.Siddhant;
 
 public class Recursion {
 
-    int num1 = 0;
-    int num2 = 0;
-    public Recursion(){
+    public static int gcf(int a, int b) {
 
+        int gcf = 0;
+        if(a % b == 0){
+            return b;
+
+
+        }
+
+        else{
+            int c = a%b;
+            return gcf(b, c);
+
+
+        }
 
     }
 
-    public int recurse(int n1, int n2){
-        num1 = n1;
-        num2 = n2;
-        return n1;
-
-    }
 }
+

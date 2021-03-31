@@ -5,20 +5,37 @@
     <title>Title</title>
 </head>
 <body>
-<div style="margin: 2%">
-    <form id="notrecursion" action="/siddhantrecursion" method="GET">
-        <label for="num1">Type the number:</label>
-        <input name="num1" id="num1" type="number" min="1" max="25" />
-        <button>Enter!</button>
-    </form>
 
-</div>
+<form id="notrecursion" action="/siddhantrecursion" method="GET">
 
-<div style="margin: 2%">
-    <p
-        th:text = "${num1}"
-    ></p>
-</div>
+    <p>Greatest Common Factor Calculated Without Recursion:</p>
+
+    <label for="num1">Type the First Number:</label>
+    <input name="num1" id="num1" type="number" min="1" max="100" />
+
+
+    <label for="num2">Type the Second Number:</label>
+    <input name="num2" id="num2" type="number" min="1" max="100" />
+    <button>Enter!</button>
+
+    <p th:text="'Greatest Common Factor: '+ ${gcf} "></p>
+    <br><br><br>
+
+    <p>Greatest Common Factor Calculated With Recursion:</p>
+
+    <label for="num3">Type the First Number:</label> <!-- input field is below -->
+    <input name="num3" id="num3" type="number" min="1" max="100"/>
+
+
+    <label for="num4">Type the Second Number:</label> <!-- input field is below -->
+    <input name="num4" id="num4" type="number" min="1" max="100"/>
+    <button>Enter!</button>
+
+    <p th:text="'The Greatest Common Factor: ' +  ${gcf1}"></p>
+
+
+
+</form>
 
 
 </body>

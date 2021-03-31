@@ -12,11 +12,25 @@ import java.io.IOException;
 @Controller
 public class RecursionController {
     @GetMapping("/siddhantrecursion")
-    public String nonrecursion(@RequestParam(name="num1", required=false,  defaultValue="10") String num1, Model model) throws IOException {
-        int nth = Integer.parseInt(num1);
+    public String nonrecursion(@RequestParam(name="num1", required=false,  defaultValue="10") Integer num1,
+                               @RequestParam(name="num2", required=false, defaultValue="10") Integer num2,
+                               @RequestParam(name="num3", required=false,  defaultValue="10") Integer num3,
+                               @RequestParam(name="num4", required=false, defaultValue = "10") Integer num4, Model model) throws IOException {
 
-        model.addAttribute("num1", Nonrecursion.driver(nth));
+        model.addAttribute("num1", num1);
+        model.addAttribute("num2", num2);
+        model.addAttribute("gcf", Nonrecursion.normal(num1, num2));
+
+        model.addAttribute("num3", num3);
+        model.addAttribute("num4", num4);
+        model.addAttribute("gcf1", Recursion.gcf(num3, num4));
         return "minilab/nonrecursion";
     }
 
+
+
+
+
 }
+
+
