@@ -9,7 +9,7 @@ Our target audience is Students looking to have a one-stop website with helpful 
 - Before and up to the AP Exam: a single webpage is developed per CB unit. Sometimes there will be multiple pages. Why AP? It's a very direct, useful topic that's on our minds right now. *This will not be just minilabs!*, but we will still work on the minilabs. It will be all our work in applying the knowledge of each unit to a webpage. This will promote collaboration by having everyone work on the same web page and therefore be more open to helping each other out since everyone will notice each others errors and successes.
 - Secondary content and content after AP Exam:
 - **Productivity App** <~~ add your names and stuff 2 do here:
-- Aidan: does database stuff and hosting on AWS (need to contact Andrew Pegg). Currently on Heroku as a substitute. Need to make a directory for minilabs.
+- Aidan: does database stuff and hosting on AWS (need to contact Andrew Pegg). Currently on Heroku as a substitute. Need to make a directory for minilabs. Fragments as well.
 **Details About the Productivity App:** <br>
 - Final grade calculator 
 - Sections for easter eggs.
