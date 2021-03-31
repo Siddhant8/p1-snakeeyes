@@ -24,7 +24,7 @@ public class RecursionController {
         model.addAttribute("num3", num3);
         model.addAttribute("num4", num4);
         model.addAttribute("gcf1", Recursion.gcf(num3, num4));
-        return "minilab/nonrecursion";
+        return "SiddhantMinilab/nonrecursion";
     }
 
 
