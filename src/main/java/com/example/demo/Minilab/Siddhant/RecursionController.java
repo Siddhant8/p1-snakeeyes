@@ -12,10 +12,10 @@ import java.io.IOException;
 @Controller
 public class RecursionController {
     @GetMapping("/siddhantrecursion")
-    public String nonrecursion(@RequestParam(name="num1", required=false,  defaultValue="10") Integer num1,
+    public String nonrecursion(@RequestParam(name="num1", required=false, defaultValue="10") Integer num1,
                                @RequestParam(name="num2", required=false, defaultValue="10") Integer num2,
-                               @RequestParam(name="num3", required=false,  defaultValue="10") Integer num3,
-                               @RequestParam(name="num4", required=false, defaultValue = "10") Integer num4, Model model) throws IOException {
+                               @RequestParam(name="num3", required=false, defaultValue="10") Integer num3,
+                               @RequestParam(name="num4", required=false, defaultValue="10") Integer num4, Model model) throws IOException {
 
         model.addAttribute("num1", num1);
         model.addAttribute("num2", num2);
